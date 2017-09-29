@@ -46,6 +46,7 @@ about:
   home: https://www.pyfilesystem.org/
   license: MIT
   license_family: MIT
+  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
   summary: Filesystem abstraction layer for Python
   description: "pyfilesystem2 lets you work with diverse filesystems through a common API."
   doc_url: https://docs.pyfilesystem.org/en/v{{ version }}
