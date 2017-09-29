@@ -1,7 +1,7 @@
 {% set name = "fs" %}
-{% set version = "2.0.9" %}
+{% set version = "2.0.11" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "8570c6349db3b0bf68fe615fe2683ca04796082aceae0ae1d232f71a6f6e47ef" %}
+{% set hash_value = "5dccd0644be5a245d71145b26c4cccdb34e1c89d76652632cebee724d1d6bb71" %}
 
 package:
   name: '{{ name|lower }}'
@@ -46,6 +46,7 @@ about:
   home: https://www.pyfilesystem.org/
   license: MIT
   license_family: MIT
+  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
   summary: Filesystem abstraction layer for Python
   description: "pyfilesystem2 lets you work with diverse filesystems through a common API."
   doc_url: https://docs.pyfilesystem.org/en/v{{ version }}
@@ -55,3 +56,4 @@ extra:
   recipe-maintainers: 
     - notestaff
     - willmcgugan
+    - ReimarBauer
