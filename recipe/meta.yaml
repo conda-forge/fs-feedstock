@@ -13,7 +13,7 @@ source:
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 0
+  number: 1
   script: python setup.py install  --single-version-externally-managed --record=record.txt
   noarch: python
 
@@ -21,14 +21,10 @@ requirements:
   build:
     - python
     - setuptools
-    - appdirs >=1.4.3,<2
-    - pytz
-    - six >=1.10.0,<2
-    - enum34 >=1.1.6,<2  # [py2k]
-    - scandir >=1.5,<2  # [py2k or py34]
     
   run:
     - python
+    - setuptools
     - appdirs >=1.4.3,<2
     - pytz
     - six >=1.10.0,<2
@@ -36,8 +32,6 @@ requirements:
     - scandir >=1.5,<2  # [py2k or py34]
 
 test:
-  requires:
-    - setuptools
   imports:
     - fs
     - fs.opener
