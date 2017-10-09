@@ -14,7 +14,9 @@ pyfilesystem2 lets you work with diverse filesystems through a common API.
 Current build status
 ====================
 
-All platforms: [![Circle CI](https://circleci.com/gh/conda-forge/fs-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/fs-feedstock)
+Linux: [![Circle CI](https://circleci.com/gh/conda-forge/fs-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/fs-feedstock)
+OSX: [![TravisCI](https://travis-ci.org/conda-forge/fs-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/fs-feedstock)
+Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/fs-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/fs-feedstock/branch/master)
 
 Current release info
 ====================
