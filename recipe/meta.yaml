@@ -1,7 +1,7 @@
 {% set name = "fs" %}
-{% set version = "2.0.12" %}
+{% set version = "2.0.15" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "63a023d731e7ff965dde5dd3772e7136f5b55499868366dae177a2690b086572" %}
+{% set hash_value = "64eb88788db11c1ac45fcd24fe7f4d76c6fade86b4c161cadfa4ec27e4fd12e9" %}
 
 package:
   name: '{{ name|lower }}'
@@ -9,7 +9,7 @@ package:
 
 source:
   fn: '{{ name }}-{{ version }}.tar.gz'
-  url: https://files.pythonhosted.org/packages/13/54/da5f674e99f7442fae59d221f20e9d6d8990c892b693b9558b1f15da7455/{{ name }}-{{ version}}.tar.gz
+  url: https://pypi.python.org/packages/49/c9/2653ff6a3fe58c0658fccd08cea9844a05c42b8d8a2d0342eaebd60039c1/fs-2.0.15.tar.gz
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
