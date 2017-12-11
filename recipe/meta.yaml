@@ -9,26 +9,21 @@ package:
 
 source:
   fn: '{{ name }}-{{ version }}.tar.gz'
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
+  url: https://pypi.python.org/packages/49/c9/2653ff6a3fe58c0658fccd08cea9844a05c42b8d8a2d0342eaebd60039c1/fs-2.0.15.tar.gz
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
   number: 0
   script: python setup.py install  --single-version-externally-managed --record=record.txt
-  noarch: python
 
 requirements:
   build:
     - python
     - setuptools
-    - appdirs >=1.4.3,<2
-    - pytz
-    - six >=1.10.0,<2
-    - enum34 >=1.1.6,<2  # [py2k]
-    - scandir >=1.5,<2  # [py2k or py34]
     
   run:
     - python
+    - setuptools
     - appdirs >=1.4.3,<2
     - pytz
     - six >=1.10.0,<2
@@ -36,8 +31,6 @@ requirements:
     - scandir >=1.5,<2  # [py2k or py34]
 
 test:
-  requires:
-    - setuptools
   imports:
     - fs
     - fs.opener
