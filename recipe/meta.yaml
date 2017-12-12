@@ -1,7 +1,7 @@
 {% set name = "fs" %}
-{% set version = "2.0.15" %}
+{% set version = "2.0.17" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "64eb88788db11c1ac45fcd24fe7f4d76c6fade86b4c161cadfa4ec27e4fd12e9" %}
+{% set hash_value = "020685e946eebb3819d5e1c01b78a66015dd5a0c37bdb2d173c43cdfb3a90d63" %}
 
 package:
   name: '{{ name|lower }}'
@@ -9,11 +9,11 @@ package:
 
 source:
   fn: '{{ name }}-{{ version }}.tar.gz'
-  url: https://pypi.python.org/packages/49/c9/2653ff6a3fe58c0658fccd08cea9844a05c42b8d8a2d0342eaebd60039c1/fs-2.0.15.tar.gz
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
   '{{ hash_type }}': '{{ hash_value }}'
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install  --single-version-externally-managed --record=record.txt
 
 requirements:
