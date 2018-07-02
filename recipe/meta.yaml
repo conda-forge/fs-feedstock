@@ -30,7 +30,7 @@ requirements:
     - enum34 >=1.1.6,<2  # [py2k]
     - scandir >=1.5,<2  # [py2k or py34]
     - typing ==3.6.4  # [py2k or py34]
-    - backports.os ==0.0.1 # [py2k]
+    - backports.os ==0.1.1 # [py2k]
 
 test:
   imports:
