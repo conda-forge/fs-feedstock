@@ -28,7 +28,8 @@ requirements:
     - pytz
     - six >=1.10.0,<2
     - enum34 >=1.1.6,<2  # [py2k]
-    - scandir >=1.5,<2  # [py2k or py34]
+    - scandir >=1.5,<2   # [py2k or py34]
+    - typing ==3.6.4     # [py2k or py34]
 
 test:
   imports:
