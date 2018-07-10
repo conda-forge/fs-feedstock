@@ -14,14 +14,16 @@ pyfilesystem2 lets you work with diverse filesystems through a common API.
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/fs-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/fs-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/fs-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/fs-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/fs-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/fs-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/fs-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/fs-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/fs-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/fs-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/fs-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/fs-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/fs/badges/version.svg)](https://anaconda.org/conda-forge/fs)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/fs/badges/downloads.svg)](https://anaconda.org/conda-forge/fs)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-fs-green.svg)](https://anaconda.org/conda-forge/fs) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/fs.svg)](https://anaconda.org/conda-forge/fs) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/fs.svg)](https://anaconda.org/conda-forge/fs) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/fs.svg)](https://anaconda.org/conda-forge/fs) |
 
 Installing fs
 =============
