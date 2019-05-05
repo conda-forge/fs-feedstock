@@ -1,7 +1,7 @@
 {% set name = "fs" %}
-{% set version = "2.4.4" %}
+{% set version = "2.4.5" %}
 {% set hash_type = "sha256" %}
-{% set hash_value = "932b2bf9f76bcc50ebe9711378f7503f71410ddeb1a77754139b886fc5302e4f" %}
+{% set hash_value = "42022b74cfa30b1fad4e697720b1bc0eed8c49ca80ed8f5f0bb07d9db41d62bf" %}
 
 package:
   name: '{{ name|lower }}'
