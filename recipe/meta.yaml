@@ -11,11 +11,11 @@ source:
   'sha256': 'cc99d476b500f993df8ef697b96dc70928ca2946a455c396a566efe021126767'
 
 build:
-  number: 2
+  number: 3
   script: python setup.py install  --single-version-externally-managed --record=record.txt
 
 requirements:
-  build:
+  host:
     - python
     - setuptools
     
