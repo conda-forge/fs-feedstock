@@ -11,7 +11,7 @@ Summary: Filesystem abstraction layer for Python
 
 Development: https://github.com/PyFilesystem/pyfilesystem2
 
-Documentation: https://docs.pyfilesystem.org/en/v2.4.11
+Documentation: https://docs.pyfilesystem.org/en/v2.4.14
 
 pyfilesystem2 lets you work with diverse filesystems through a common API.
 
