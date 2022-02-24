@@ -6,29 +6,24 @@ package:
   version: '{{ version }}'
 
 source:
-  fn: '{{ name }}-{{ version }}.tar.gz'
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  'sha256': 'cc99d476b500f993df8ef697b96dc70928ca2946a455c396a566efe021126767'
+  sha256: cc99d476b500f993df8ef697b96dc70928ca2946a455c396a566efe021126767
 
 build:
   number: 3
-  script: python setup.py install  --single-version-externally-managed --record=record.txt
+  noarch: python
+  script: pip install -vv .
 
 requirements:
   host:
-    - python
-    - setuptools
-    
+    - python >=3.6
+    - pip
   run:
-    - python
+    - python >=3.6
     - setuptools
     - appdirs >=1.4.3,<2
     - pytz
     - six >=1.10.0,<2
-    - enum34 >=1.1.6,<2  # [py2k]
-    - scandir >=1.5,<2  # [py2k or py34]
-    - typing ==3.6.4  # [py2k or py34]
-    - backports.os ==0.1.1  # [py2k]
 
 test:
   imports:
