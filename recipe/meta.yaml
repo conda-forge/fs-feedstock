@@ -1,16 +1,16 @@
 {% set name = "fs" %}
-{% set version = "2.4.11" %}
+{% set version = "2.4.15" %}
 
 package:
-  name: '{{ name|lower }}'
-  version: '{{ version }}'
+  name: {{ name|lower }}
+  version: {{ version }}
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: cc99d476b500f993df8ef697b96dc70928ca2946a455c396a566efe021126767
+  sha256: b09d02c311f4add1e6e2b75724c450eafcfeecc917579224ca8ad21dacd0a182
 
 build:
-  number: 3
+  number: 0
   noarch: python
   script: pip install -vv .
 
@@ -34,14 +34,14 @@ about:
   home: https://www.pyfilesystem.org/
   license: MIT
   license_family: MIT
-  license_file: '{{ environ["RECIPE_DIR"] }}/LICENSE'
+  license_file: {{ environ["RECIPE_DIR"] }}/LICENSE
   summary: Filesystem abstraction layer for Python
-  description: "pyfilesystem2 lets you work with diverse filesystems through a common API."
+  description: pyfilesystem2 lets you work with diverse filesystems through a common API.
   doc_url: https://docs.pyfilesystem.org/en/v{{ version }}
-  dev_url: 'https://github.com/PyFilesystem/pyfilesystem2'
+  dev_url: https://github.com/PyFilesystem/pyfilesystem2
 
 extra:
-  recipe-maintainers: 
+  recipe-maintainers:
     - notestaff
     - willmcgugan
     - ReimarBauer
