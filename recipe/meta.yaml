@@ -1,5 +1,5 @@
 {% set name = "fs" %}
-{% set version = "2.4.15" %}
+{% set version = "2.4.16" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: b09d02c311f4add1e6e2b75724c450eafcfeecc917579224ca8ad21dacd0a182
+  sha256: ae97c7d51213f4b70b6a958292530289090de3a7e15841e108fbe144f069d313
 
 build:
   number: 0
@@ -22,7 +22,6 @@ requirements:
     - python >=3.6
     - setuptools
     - appdirs >=1.4.3,<2
-    - pytz
     - six >=1.10.0,<2
 
 test:
